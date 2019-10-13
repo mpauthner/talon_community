@@ -4,6 +4,7 @@ EDITOR_BUNDLES = (
     "com.microsoft.VSCode",
     "com.github.atom",
     "com.apple.TextEdit",
+    "com.sublimetext.3",
     # jetbrains
     "com.jetbrains.intellij",
     "com.jetbrains.intellij.ce",
@@ -19,7 +20,7 @@ EDITOR_BUNDLES = (
     "com.google.android.studio",
 )
 
-BROWSER_BUNDLES = ("org.mozilla.firefox", "com.google.Chrome")
+BROWSER_BUNDLES = ("org.mozilla.firefox", "com.google.Chrome", "com.brave.Browser")
 
 FILETYPE_SENSITIVE_BUNDLES = (
     # *BROWSER_BUNDLES,

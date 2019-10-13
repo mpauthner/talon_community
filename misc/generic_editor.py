@@ -201,14 +201,14 @@ def word_number(m):
 ctx.keymap(
     {
         # meta
-        "(save it | sage)": Key("cmd-s"),
-        "(undo it | dizzle)": Key("cmd-z"),
-        "(redo it | rizzle)": Key("cmd-shift-z"),
+        "(save | sage)": Key("cmd-s"),
+        "(undo | dizzle)": Key("cmd-z"),
+        "(redo | rizzle)": Key("cmd-shift-z"),
         # clipboard
-        "(clip cut | snatch)": Key("cmd-x"),
-        "(clip copy | stoosh)": Key("cmd-c"),
-        "(clip paste | spark)": Key("cmd-v"),
-        "(clip paste preserve formatting | match spark)": Key("cmd-shift-alt-v"),
+        "([clip] cut | snatch)": Key("cmd-x"),
+        "([clip] copy | stoosh)": Key("cmd-c"),
+        "([clip] paste | spark)": Key("cmd-v"),
+        "([clip] paste preserve formatting | match spark)": Key("cmd-shift-alt-v"),
         # motions
         "([go] word left | fame)": Key("alt-left"),
         "([go] word right | fish)": Key("alt-right"),
