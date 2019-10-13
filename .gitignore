@@ -112,3 +112,4 @@ venv.bak/
 # personal scripts
 personal.py
 personal
+misc/webview_locations.json

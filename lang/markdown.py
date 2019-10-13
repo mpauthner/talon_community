@@ -2,7 +2,7 @@ from talon.voice import Context, press
 
 from .. import utils
 from ..apps.atom import jump_to_bol
-from ..utils import is_filetype, optional_numerals
+from ..utils import is_filetype, optional_numerals, sentence_text
 
 FILETYPES = (".md",)
 
@@ -110,6 +110,14 @@ keymap = {
     # "add tag " + optional_numeral + "<dgndictation>": markdown_add_tag,
     "[add] tag <dgndictation>": markdown_add_tag,
     "remove tag <dgndictation>": markdown_remove_tag,
+
+    #headlines
+    "[mark] headline 1 <dgndictation>": ["# ", sentence_text],
+    "[mark] headline 2 <dgndictation>": ["## ", sentence_text], 
+    "[mark] headline 3 <dgndictation>": ["### ", sentence_text], 
+    "[mark] headline 4 <dgndictation>": ["#### ", sentence_text], 
+    "[mark] headline 5 <dgndictation>": ["##### ", sentence_text], 
+    "[mark] headline 6 <dgndictation>": ["###### ", sentence_text]
 }
 
 ctx.keymap(keymap)
